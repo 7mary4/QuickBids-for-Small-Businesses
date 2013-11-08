@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.nav-item {
+	display:block;
+}
+.nav-item .pure-button {
+	text-align:left;
+	}
+#companySummary {
+	padding-left:10px;
+	font-size:85%;
+	}	
+	

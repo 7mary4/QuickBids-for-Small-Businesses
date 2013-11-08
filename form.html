@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Company Details</title>
+<link href="//quickbooks-s3.intuitstatic.com/assets/harmony/images/favicon-820030dd7b74f143954126fca2c43bc8.ico" rel="icon" type="image/x-icon" />
+  
+  
+<style>
+body {margin:0; padding:220px 0 0 0;
+font-family:arial;font-size:90%;
+background:#fff url(bg2.png) no-repeat top left;
+}
+a img{border:none;}
+label{display:block;}
+input {margin:5px 10px;}
+li label {display:inline;}
+main {
+    display: block;
+    float: left;
+    margin: 0 0 0 50px;
+    width: 880px;
+	}
+aside {float:left;
+margin-left:10px;
+width:300px;
+}	
+footer {
+	display:block;
+	clear:left;
+	margin:20px;
+	text-align:center;
+	}
+
+fieldset {border:none;}
+legend {font-weight:bold;}
+.visually-hidden {
+position: absolute !important;
+clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+clip: rect(1px, 1px, 1px, 1px);
+padding:0 !important;
+border:0 !important;
+height: 1px !important;
+width: 1px !important;
+overflow: hidden;
+}
+.completed img {
+	margin:0 5px;}
+	form {
+counter-reset: fieldsets;
+}
+form > fieldset > legend:before {
+content: "Item " counter(fieldsets) ": ";
+counter-increment: fieldsets;
+}
+
+ fieldset fieldset legend {
+color: #111111;
+font-size: 13px;
+font-weight: normal;
+padding-bottom: 0;
+}
+</style>
+</head>
+
+<body>
+<main>
+<h3>Start the registration process</h3>
+
+<form action="duns.html">
+
+<fieldset>
+<legend>Does your business have a positive cash flow?</legend>
+<p>Government contracts require a positive cash flow for successful bids.</p>
+<label><input type="radio" name="cash" value="yes"> Yes</label>
+<label><input type="radio" name="cash" value="no"> No</label>
+</fieldset>
+
+<fieldset>
+<legend>Does the business have more than 500 employees?</legend>
+<p>Small Businesses, <a href="http://www.sba.gov/content/table-small-business-size-standards">based on employee size</a>, receive preferential treatment during the bidding process. </p>
+<label><input type="radio" name="emp" value="yes"> Yes</label>
+<label><input type="radio" name="emp" value="no"> No</label>
+</fieldset>
+
+<fieldset>
+<legend>Special Considerations</legend>
+<p>Does your business qualify for special considerations. Select the appropriate options.</p>
+<ul>
+<li><label><input type="checkbox"  name="special" value="veteran"> Veteran owned business</label> <a href="http://www.va.gov/osdbu/veteran/verificationInstructions.asp" aria-title="Veterans owned business qualifications">?</a></li>
+<li><label><input type="checkbox"  name="special" value="female"> Woman owned business</label> <a href="#" aria-title="Qualifications for woman owned business">?</a></li>
+<li>
+<label><input type="checkbox"  name="special" value="femalesc"> Woman with special circumstances owned business</label> <a href="#" aria-title="Qualifications for woman owned business">?</a></li>
+<li>
+<label><input type="checkbox"  name="special" value="minority"> Minority owned business</label> <a href="#" aria-title="Qualifications for Minority owned business">?</a></li>
+<li>
+<label><input type="checkbox"  name="special" value="hubzone"> HubZone location</label> <a href="#" aria-title="Hubzone qualifications">?</a></li>
+
+</fieldset>
+
+<fieldset>
+<legend>Business Categories</legend>
+<p>QuickBooks has already evaluated your business and suggests the following government categories</p>
+
+  <label>
+    <input type="checkbox" name="naics" value="423120"> 
+    423120  Automobile accessories (except tires, tubes) merchant wholesalers</label>
+  <label>
+    
+    <input type="checkbox"  name="naics" value="423930"> 
+    423930  Tires, scrap, merchant wholesalers</label>
+    <label>
+    <input type="checkbox"  name="naics" value="441320"> 
+    441320  Automotive tire dealers</label>
+    <label>
+    <input type="checkbox"  name="naics" value="441320"> 
+    441320  Used tire dealers</label>
+    <label>
+    <input type="checkbox"  name="naics" value="811198"> 
+    811198  Tire repair shops (except retreading), automotive</label>
+    <label>
+    <input type="checkbox"  name="naics" value="423830"> 
+    423830  Tire recapping machinery merchant wholesalers</label>
+    <label>
+</fieldset>
+<button>Next Step: Get DUNS ID</button>
+</form>
+</main>
+<aside>
+<h3>Registration Steps</h3>
+<ol>
+<li class="completed"><img src="icon_checkmark.gif" alt="completed step">Define your business specifics.</li>
+<li>Apply for a DUNS ID. <a href="#">Add <span class="visually-hidden">your DUNS ID</span></a><br>
+Estimated time: 15 minutes + 1 day response.</li>
+<li>Register for System Award Management. <a href="#">Add <span class="visually-hidden">Your SAM registration</span></a><br>
+Estimated time: 20 minutes + 1 week response</li>
+<li>Find Government Codes for Business <a href="#">Add <span class="visually-hidden">your business codes</span></a><br>
+Estimated time: 20 minutes</li>
+<li>Request Past Performance Evaluation <a href="#">Add <span class="visually-hidden">your PPA certificate</span></a><br>
+Estimated time: 20 minutes + 1 week response</li>
+<li><strong>Begin searching and applying for contracts</strong></li>
+
+</ol>
+</aside>
+<footer>A QuickBids Experiment</footer>
+</body>
+</html>
